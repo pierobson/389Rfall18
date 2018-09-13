@@ -26,7 +26,9 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
 3. IP Address - 142.93.118.186  
 Found by executing '*ping cornerstoneairlines.co*' and seeing '*64 bytes from 142.93.118.186...*'
 
-4. 
+4. Found hidden directory /secret which contained a flag in the source and found a flag in the home page's source.  
+Also found robots.txt which appears to say no users have access to /secret.  
+Full report from DirBuster can be found under dirbust_cornerstoneairlines.txt.  
 CMSC389R-{h1dden_fl4g_in_s0urce}  
 CMSC389R-{fly_th3_sk1es_w1th_u5}  
 
