@@ -20,7 +20,8 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
             - Lives in Silver Spring, MD according to Twitter account.  
     Email   - kruegster@tutanota.co           - Found on About page of website. Website found in Twitter bio.  
 
-3. 
+3. IP Address - 142.93.118.186  
+Found by executing *ping cornerstoneairlines.co* and seeing *64 bytes from 142.93.118.186*
 
 4. 
 CMSC389R-{h1dden_fl4g_in_s0urce}  
