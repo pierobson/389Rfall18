@@ -15,10 +15,13 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
 1. Fred Krueger
 
 2.  Possible Reddit account - u/kruegster1990 - Found just by google searching kruegster1990  
+  
     Twitter - @kruegster1990                  - Found by googling kruegster1990 and following link to   
         swtity.com/umdcsec/following.  
-       <p>     - Lives in Silver Spring, MD according to Twitter account.  </p>
-    Email   - kruegster@tutanota.co           - Found on About page of website. Website found in Twitter bio.  
+            - Lives in Silver Spring, MD according to Twitter account. 
+              
+    Email   - kruegster@tutanota.co           - Found on About page of website. Website found in Twitter bio. 
+      
 
 3. 
 
