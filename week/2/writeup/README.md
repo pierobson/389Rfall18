@@ -70,4 +70,4 @@ Once I had the password, I nc'ed into the server and ls'ed.  I wasn't sure where
 home would be a good place to start.  Home only had the flight_records directory so that seemed promising.   
 In the flgiht records folder, I got a little concerned with all the txt files but I remembered seeing the boarding  
 pass on the kruegster1990 instagram account.  The second picture has an AAC number on it, so I checked the  
-txt file with the matching number and found the flag.*
+txt file with the matching number and found the flag.
