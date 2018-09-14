@@ -51,7 +51,7 @@ by listing an OpenSSH service specific to Ubuntu.
 
 ### Part 2 (55 pts)
 
-*CMSC389R-{c0rn3rstone-air-27670}  
+*CMSC389R-{c0rn3rstone-air-27670}*  
 Most of my strategy to get access to the server was based on the assumption that the Kruegster would  
 continue to use the same username for the admin server as he did for everything else.  
 Because of this, I ran my script in 6 separate processes with slight modifications to each.  
