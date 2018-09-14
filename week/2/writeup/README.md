@@ -32,7 +32,6 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
 Found by executing '*ping cornerstoneairlines.co*' and seeing '*64 bytes from 142.93.118.186...*'
 
 4. Found robots.txt which mentioned a hidden directory /secret which contained a flag in the source and found a flag in the home page's source.  
-robots.txt also appears to say something about user access to /secret.  
 Full report from DirBuster can be found under dirbust_cornerstoneairlines.txt.  
 CMSC389R-{h1dden_fl4g_in_s0urce}  
 CMSC389R-{fly_th3_sk1es_w1th_u5}  
