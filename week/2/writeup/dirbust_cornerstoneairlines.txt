@@ -1,0 +1,33 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Thu Sep 13 19:21:23 EDT 2018
+--------------------------------
+
+http://www.cornerstoneairlines.co:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 403 response:
+
+/icons/
+/icons/small/
+/server-status/
+
+Dirs found with a 200 response:
+
+/
+/secret/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 200 responce:
+
+/index.html
+/about.html
+/popper.min.js
+/bootstrap.min.js
+
+
+--------------------------------
