@@ -48,7 +48,15 @@ this is probably more accurate than the other address.
 7. Searching 142.93.118.186 on censys first showed me that the server is running Ubuntu and Shodan confirmed this  
 by listing an OpenSSH service specific to Ubuntu.
 
-8. Found using dnsdumpster.com -> *CMSC389R-{dns-txt-rec0rd-ftw}*
+8. Found using dnsdumpster.com -> *CMSC389R-{dns-txt-rec0rd-ftw}*  
+  
+Ran *nmap –script http-enum.nse 142.93.117.193* which led to me finding "/.git/HEAD: Git folder" which  
+was near "/robots.txt" and "/secret/". However, I wasn't paying to much attention to that at the time  
+and ended up spending an hour trying to remember what command I ran to see the "git thing".  Eventually,  
+I realized it was the script version of nmap and found it again. Then I went to  
+"cornerstoneairlines.co/.git/HEAD". This looked like I was on the right track but wasn't quite there.  
+Then I got rid of the /HEAD and was greeted with a file explorer.  The "COMMIT_EDITMSG" looked a little  
+suspicious, so I checked that out and found this flag: *CMSC389R-{y0u_found_th3_g1t_repo}
 
 ### Part 2 (55 pts)
 
