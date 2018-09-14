@@ -42,7 +42,9 @@ I'm still confused about this page though because it has a comment in the source
 but I never found anything that seemed to be related to this... 
 
 6. whois cornerstoneairlines.co gives 1234 Secure Road, New York, NY. Searching 142.93.118.186 on censys  
-also says New York, NY and that the network is run by DIGITALOCEAN-ASN - DigitalOcean, LLC.
+also says New York, NY and that the network is run by DIGITALOCEAN-ASN - DigitalOcean, LLC.  
+Using discover, however, I got an address of 101 Ave of the Americas, 10th Floor, New York, NY, and I think  
+this is probably more accurate than the other address.
 
 7. Searching 142.93.118.186 on censys first showed me that the server is running Ubuntu and Shodan confirmed this  
 by listing an OpenSSH service specific to Ubuntu.
