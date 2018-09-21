@@ -22,5 +22,14 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
 #### Vulnerability 2 - Open Ports -
   To prevent access to the login prompt running on port 1337 in the first place, Fred should not allow an unauthorized user such as an attacker to find open ports on the server.  If I had never found that port 1337 was open, I never would have been able to try to login to the prompt.  To hide this, Fred should setup a firewall to filter incoming packets from unknown sources.  He could configure the firewall to only allow his personal network or could also allow connections from sources that appear to truly be Fred.  When an someone tries to scan the ports of the server's IP or attempts to nc to it, the firewall would simply drop the packets if they are deemed unauthorized.  This means that nmap wouldn't be able to find the open ports on the server and that attackers trying to connect to the open port 1337 would never get a connection.  Although Fred should always use a more secure password than pokemon, this basically solves the weak password issue as well because an attacker would never be able to get to the login prompt without somehow tricking the firewall into thinking they are Fred.
   
+  (https://www.digitalocean.com/community/tutorials/what-is-a-firewall-and-how-does-it-work)
   
- #### Vulnerability 3 - 
+  
+ #### Vulnerability 3 - Apache Vulnerabilities -  
+  When looking up the 142.93.118.186 on Shodan, I discovered that the server is running an outdated version of Apache and is likely to be vulnerable to various attacks.  One of these includes bypassing SSL access restrictions.  
+   '  
+   CVE-2016-4979 	The Apache HTTP Server 2.4.18 through 2.4.20, when mod_http2 and mod_ssl are enabled, does not properly recognize the "SSLVerifyClient require" directive for HTTP/2 request authorization, which allows remote attackers to bypass intended access restrictions by leveraging the ability to send multiple requests over a single connection and aborting a renegotiation.
+   '  
+   In order to fix this, Fred should make sure all of the software he has running on the server is up to date with the latest version or patches.  
+   
+   (https://www.shodan.io/host/142.93.118.186)
