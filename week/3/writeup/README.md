@@ -27,9 +27,9 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
   
  #### Vulnerability 3 - Apache Vulnerabilities -  
   When looking up 142.93.118.186 on Shodan, I discovered that the server is running an outdated version of Apache and is likely to be vulnerable to various attacks.  One of these includes bypassing SSL access restrictions.  
-   '  
+   ```  
    CVE-2016-4979 	The Apache HTTP Server 2.4.18 through 2.4.20, when mod_http2 and mod_ssl are enabled, does not properly recognize the "SSLVerifyClient require" directive for HTTP/2 request authorization, which allows remote attackers to bypass intended access restrictions by leveraging the ability to send multiple requests over a single connection and aborting a renegotiation.
-   '  
+   ```  
    In order to fix this, Fred should make sure all of the software he has running on the server is up to date with the latest version or patches.  
    
    (https://www.shodan.io/host/142.93.118.186)
