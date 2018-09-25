@@ -12,7 +12,16 @@ Digital acknowledgement of honor pledge: *Pierce Robson*
 
 ### Part 1 (45 pts)  
 Flag: CMSC389R-{p1ng_as_a_$erv1c3}  
-Input: '8.8.8.8; cd home; cat flag.txt'   
+Input: `8.8.8.8; cd home; cat flag.txt`   
+  
+First, I just tried to ping the with 127.0.0.1 to see what would happen.  Nothing special so I tried a Google server, 8.8.8.8.  
+Still nothing super interesting but I figured I'd try the simplest command injection I could think of which was just giving it some extra commands to run.  
+To do this, I first tried `8.8.8.8; ls` and saw that it executed the ls command and showed me the output.  
+I figured if there was a flag txt file somewhere, it was most likely in the home directory so my next attempt was  
+`8.8.8.8; cd home; ls` which greeted me with a 'flag.txt' file.  
+Lastly, I connected one more time and gave it `8.8.8.8; cd home; cat flag.txt` which gave me the flag.  
+All in all, it probably took about 3 minutes to get the flag.  
+  
 
 
 ### Part 2 (55 pts)
