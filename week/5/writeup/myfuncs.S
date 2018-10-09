@@ -33,10 +33,9 @@ my_strncpy:
 
 strn_loop:
         
-        mov [rdi], [rsi]        ; Copy char from second arg to first arg
-        add rdi, 1              ; Increment pointer to both
-        add rsi, 1              
-
+        mov al, byte [rsi+rcx-1]        ; Copy char from second arg to first arg
+        mov byte [rdi+rcx-1], al              ; Increment pointer to both
+        
         loop strn_loop          ; Loop until rcx == 0
 
         leave         ;moves down the stack pointer to the current base pointer,
