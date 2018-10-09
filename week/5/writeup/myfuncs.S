@@ -10,7 +10,7 @@ my_memset:
 
 mem_loop:
 
-        mov [rdi], rsi  ; Move char into mem location
+        mov [rdi], sil  ; Move char into mem location
         add rdi, 1      ; Move to next mem location to copy to
         loop mem_loop   ; Loop until rcx == 0
 
