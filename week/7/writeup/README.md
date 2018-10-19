@@ -23,7 +23,8 @@ Chicago, Illinois. Regus - John Hancock Center
 
 5. 539.5m Above Sea Level 
 
-6. CMSC389R-{look_If0und_a_string}  
+6. Found through strings: CMSC389R-{look_If0und_a_string}  
+Found from binwalk --dd="png:png" image: CMSC389R-{abr@cadabra}  
 
 
 ### Part 2 (55 pts)
