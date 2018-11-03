@@ -21,7 +21,7 @@ Digital acknowledgement of honor pledge: Pierce Robson
 
 5. "tomorrow at 1500" so October 25th at 3pm  
 
-6. https://drive.google.com/file/d/1McOX5WjeVHNLyTBNXqbOde7l8SAQ3Dol/view?usp=sharing  
+6. https://drive.google.com/file/d/1McOX5WjeVHNLyTBNXqbOde7l8SAQ3DoI/view?usp=sharing 
 
 7. October 25th at 3pm  
 
