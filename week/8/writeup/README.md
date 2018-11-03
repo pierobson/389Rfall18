@@ -28,12 +28,13 @@ Digital acknowledgement of honor pledge: Pierce Robson
 ### Part 2 (55 Pts)
 
 *Report your answers to the questions about parsing update.fpff below.*
-1.
+1. October 25, 2018 at 12:40am  
 
-2.
+2. laz0rh4x  
 
-3.
+3. Says it has 9, actually has 11  
 
-4.
+4. In rep.txt, png pulled out.
 
-5.
+5. CMSC389R-{c0rn3rst0ne_airlin3s_to_the_m00n} from the png  
+   Location: 107271?
