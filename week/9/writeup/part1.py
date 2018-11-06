@@ -12,7 +12,7 @@ pswds = open("passwords.txt", 'a+')
 salts = string.ascii_lowercase
 count = 1
 for salt in salts:
-    print('----- '+ salt + ' -----')
+    #print('----- '+ salt + ' -----')
     wordlist = open("pwd.txt", 'r')
     for word in wordlist:
         count += 1
@@ -25,6 +25,7 @@ for salt in salts:
         hashes = open("../hashes", 'r')
         for hashpass in hashes:
             if hsh == hashpass.strip():
-                pswds.write(pw + " == " + hashpass + "\n\n")
-                        
-print(count)
+                l = pw + " == " + hashpass + "\n\n"
+                print(l)
+                pswds.write(l)
+#print(count)
